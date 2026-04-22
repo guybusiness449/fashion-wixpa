@@ -1,52 +1,226 @@
 {
-  "404": {
-    "title": "404",
-    "not_found": "Page not found.",
-    "back_to_shopping": "Back to shopping"
+  "settings_groups": {
+    "typography": "Typography",
+    "colors": "Colors",
+    "layout": "Layout",
+    "buttons": "Buttons",
+    "cart": "Cart",
+    "social_media": "Social Media",
+    "contact": "Contact",
+    "product": "Product",
+    "payment": "Payment",
+    "announcement": "Announcement Bar"
   },
-  "blog": {
-    "article_comments": "Comments",
-    "article_metadata_html": "{{ date }} by {{ author }}",
-    "comment_form_body": "Comment",
-    "comment_form_email": "Email",
-    "comment_form_name": "Name",
-    "comment_form_submit": "Post",
-    "comment_form_title": "Add a comment"
+  "settings_content": {
+    "typography_fonts": "Fonts",
+    "colors_brand": "Brand Colors",
+    "colors_backgrounds": "Background & Text",
+    "colors_sale": "Sale & Badges",
+    "layout_container": "Container & Spacing",
+    "buttons_primary": "Primary Button",
+    "buttons_secondary": "Secondary Button",
+    "social_accounts": "Social Accounts",
+    "product_cards": "Product Cards",
+    "product_page": "Product Page",
+    "payment_custom": "Custom Payment Icons"
   },
-  "cart": {
-    "checkout": "Checkout",
-    "title": "Cart",
-    "update": "Update",
-    "remove": "Remove"
+  "settings_labels": {
+    "primary_font": "Primary Font",
+    "secondary_font": "Secondary Font",
+    "base_font_size": "Base Font Size",
+    "heading_scale": "Heading Scale",
+    "primary_color": "Primary Color",
+    "secondary_color": "Secondary Color",
+    "accent_color": "Accent Color",
+    "background_color": "Background Color",
+    "background_secondary_color": "Secondary Background",
+    "text_color": "Text Color",
+    "text_secondary_color": "Secondary Text",
+    "sale_badge_color": "Sale Badge Background",
+    "sale_text_color": "Sale Text Color",
+    "page_max_width": "Page Max Width",
+    "section_spacing": "Section Spacing",
+    "grid_gap": "Grid Gap",
+    "corner_radius": "Corner Radius",
+    "button_primary_background": "Primary Button Background",
+    "button_primary_text": "Primary Button Text",
+    "button_style": "Button Style",
+    "button_secondary_background": "Secondary Button Background",
+    "button_secondary_text": "Secondary Button Text",
+    "button_corner_radius": "Button Corner Radius",
+    "cart_type": "Cart Type",
+    "show_free_shipping_progress": "Show Free Shipping Progress Bar",
+    "free_shipping_threshold": "Free Shipping Threshold",
+    "show_cart_notes": "Show Cart Notes",
+    "enable_ajax_cart": "Enable AJAX Cart",
+    "instagram_url": "Instagram URL",
+    "tiktok_url": "TikTok URL",
+    "pinterest_url": "Pinterest URL",
+    "facebook_url": "Facebook URL",
+    "youtube_url": "YouTube URL",
+    "twitter_url": "Twitter/X URL",
+    "email": "Email Address",
+    "phone": "Phone Number",
+    "address": "Address",
+    "product_image_ratio": "Product Image Ratio",
+    "show_second_image_on_hover": "Show Second Image on Hover",
+    "show_quick_add_button": "Show Quick Add Button",
+    "show_color_swatches": "Show Color Swatches",
+    "product_gallery_layout": "Product Gallery Layout",
+    "show_size_guide": "Show Size Guide Link",
+    "show_payment_icons": "Show Payment Icons",
+    "payment_icon_1": "Payment Icon 1",
+    "payment_icon_2": "Payment Icon 2",
+    "payment_icon_3": "Payment Icon 3",
+    "enable_announcement_bar": "Enable Announcement Bar",
+    "announcement_text": "Announcement Text",
+    "announcement_link": "Announcement Link (Optional)",
+    "announcement_background": "Announcement Background",
+    "announcement_text_color": "Announcement Text Color"
   },
-  "customers": {
-    "login": {
-      "email": "Email",
-      "password": "Password",
-      "submit": "Sign in",
-      "title": "Login"
+  "settings_info": {
+    "primary_font": "Used for headings and primary text",
+    "secondary_font": "Used for body text and descriptions",
+    "heading_scale": "Controls the size ratio between heading levels",
+    "primary_color": "Main brand color used for accents and links",
+    "secondary_color": "Supporting brand color",
+    "accent_color": "Highlight color for special elements",
+    "background_color": "Main page background color",
+    "background_secondary_color": "Used for secondary sections and cards",
+    "text_color": "Main text color",
+    "text_secondary_color": "Used for less important text like meta info",
+    "sale_badge_color": "Background color for sale badges",
+    "sale_text_color": "Text color for sale badges",
+    "section_spacing": "Vertical spacing between sections",
+    "button_primary_background": "Background color for primary call-to-action buttons",
+    "button_primary_text": "Text color for primary buttons",
+    "button_secondary_background": "Background color for secondary buttons",
+    "button_secondary_text": "Text color for secondary buttons",
+    "cart_type": "Choose between slide-out drawer or full page cart",
+    "show_free_shipping_progress": "Display a progress bar showing how much more to spend for free shipping",
+    "free_shipping_threshold": "Minimum order value for free shipping",
+    "enable_ajax_cart": "Add products to cart without page reload",
+    "instagram_url": "Your Instagram profile URL",
+    "tiktok_url": "Your TikTok profile URL",
+    "pinterest_url": "Your Pinterest profile URL",
+    "facebook_url": "Your Facebook page URL",
+    "youtube_url": "Your YouTube channel URL",
+    "twitter_url": "Your Twitter/X profile URL",
+    "email": "Customer support email address",
+    "phone": "Customer support phone number",
+    "address": "Store physical address",
+    "show_second_image_on_hover": "Show second product image when hovering on collection pages",
+    "show_payment_icons": "Display payment method icons in footer",
+    "announcement_text": "Text displayed in the announcement bar",
+    "announcement_link": "Link the announcement bar to a page (optional)"
+  },
+  "settings_options": {
+    "page_max_width": {
+      "narrow": "Narrow (1200px)",
+      "standard": "Standard (1400px)",
+      "wide": "Wide (1600px)",
+      "full": "Full Width"
+    },
+    "corner_radius": {
+      "none": "None (Square)",
+      "small": "Small (4px)",
+      "medium": "Medium (8px)",
+      "large": "Large (12px)",
+      "rounded": "Fully Rounded"
+    },
+    "button_style": {
+      "solid": "Solid Fill",
+      "outline": "Outline"
+    },
+    "cart_type": {
+      "drawer": "Slide-out Drawer",
+      "page": "Full Page"
+    },
+    "image_ratio": {
+      "square": "Square (1:1)",
+      "portrait": "Portrait (2:3)",
+      "landscape": "Landscape (3:2)",
+      "adapt": "Adapt to Image"
+    },
+    "gallery_layout": {
+      "stacked": "Stacked Vertically",
+      "grid": "Grid Layout",
+      "thumbnails": "Thumbnails Navigation"
     }
   },
-  "collections": {
-    "title": "Collections"
-  },
-  "gift_card": {
-    "add_to_apple_wallet": "Add to Apple Wallet",
-    "card": "Gift card",
-    "expired": "This gift card has expired",
-    "expires_on": "Expires on {{ expires_on }}",
-    "use_at_checkout": "Use this gift card at checkout"
-  },
-  "password": {
-    "title": "This shop is private",
+  "general": {
+    "404": "Not found",
+    "article": "Article",
+    "block": "Block",
+    "blog": "Blog",
+    "cart": "Cart",
+    "collection": "Collection",
+    "collections": "Collections",
+    "collection_card": "Collection card",
+    "collections_grid": "Collections grid",
+    "colors": "Colors",
+    "column": "Column",
+    "content": "Content",
+    "custom_section": "Custom section",
+    "fonts": "Fonts",
+    "footer": "Footer",
+    "group": "Group",
+    "header": "Header",
+    "layout": "Layout",
+    "main": "Main",
+    "page": "Page",
     "password": "Password",
-    "enter": "Enter"
+    "primary": "Primary",
+    "product": "Product",
+    "row": "Row",
+    "search": "Search",
+    "secondary": "Secondary",
+    "section": "Section",
+    "settings": "Settings",
+    "sidebar": "Sidebar",
+    "text": "Text",
+    "theme": "Theme",
+    "typography": "Typography"
   },
-  "search": {
-    "title": "Search",
-    "placeholder": "Search articles, pages, or products",
-    "submit": "Search",
-    "no_results_html": "No results found for {{ terms }}",
-    "results_for_html": "{{ count }} results found for {{ terms }}"
+  "labels": {
+    "alignment": "Alignment",
+    "background": "Background",
+    "foreground": "Foreground",
+    "grid_gap": "Grid spacing",
+    "grid_item_width": "Grid item width",
+    "input_corner_radius": "Input corner radius",
+    "layout_direction": "Layout direction",
+    "menu": "Menu",
+    "customer_account_menu": "Customer account menu",
+    "padding": "Padding",
+    "page_margin": "Page margin",
+    "page_width": "Page width",
+    "show_payment_icons": "Show payment icons",
+    "text_style": "Text style",
+    "text": "Text"
+  },
+  "options": {
+    "alignment": {
+      "left": "Left",
+      "center": "Center",
+      "right": "Right"
+    },
+    "direction": {
+      "horizontal": "Horizontal",
+      "vertical": "Vertical"
+    },
+    "page_width": {
+      "narrow": "Narrow",
+      "wide": "Wide"
+    },
+    "size": {
+      "large": "Large",
+      "small": "Small"
+    },
+    "text_style": {
+      "title": "Title",
+      "subtitle": "Subtitle",
+      "normal": "Normal text"
+    }
   }
 }
