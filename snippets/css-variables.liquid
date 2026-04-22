@@ -5,14 +5,72 @@
   {{ settings.type_primary_font | font_modify: 'weight', 'bold' | font_modify: 'style', 'italic' | font_face: font_display: 'swap' }}
   {{ settings.type_primary_font | font_modify: 'style', 'italic' | font_face: font_display: 'swap' }}
 
+  {% if settings.type_secondary_font != settings.type_primary_font %}
+    {{ settings.type_secondary_font | font_face: font_display: 'swap' }}
+    {{ settings.type_secondary_font | font_modify: 'weight', 'bold' | font_face: font_display: 'swap' }}
+    {{ settings.type_secondary_font | font_modify: 'weight', 'bold' | font_modify: 'style', 'italic' | font_face: font_display: 'swap' }}
+    {{ settings.type_secondary_font | font_modify: 'style', 'italic' | font_face: font_display: 'swap' }}
+  {% endif %}
+
   :root {
+    /* Typography */
     --font-primary--family: {{ settings.type_primary_font.family }}, {{ settings.type_primary_font.fallback_families }};
     --font-primary--style: {{ settings.type_primary_font.style }};
     --font-primary--weight: {{ settings.type_primary_font.weight }};
-    --page-width: {{ settings.max_page_width }};
-    --page-margin: {{ settings.min_page_margin }}px;
-    --color-background: {{ settings.background_color }};
-    --color-foreground: {{ settings.foreground_color }};
-    --style-border-radius-inputs: {{ settings.input_corner_radius }}px;
+    
+    {% if settings.type_secondary_font != settings.type_primary_font %}
+      --font-secondary--family: {{ settings.type_secondary_font.family }}, {{ settings.type_secondary_font.fallback_families }};
+      --font-secondary--style: {{ settings.type_secondary_font.style }};
+      --font-secondary--weight: {{ settings.type_secondary_font.weight }};
+    {% else %}
+      --font-secondary--family: var(--font-primary--family);
+      --font-secondary--style: var(--font-primary--style);
+      --font-secondary--weight: var(--font-primary--weight);
+    {% endif %}
+    
+    --font-size-base: {{ settings.type_base_font_size }}px;
+    --heading-scale: {{ settings.type_heading_scale }};
+    
+    /* Layout */
+    --page-width: {{ settings.layout_max_width }};
+    --page-margin: calc((100% - var(--page-width)) / 2);
+    --section-spacing: {{ settings.layout_section_spacing }}px;
+    --grid-gap: {{ settings.layout_grid_gap }}px;
+    --border-radius: {{ settings.layout_corner_radius }};
+    
+    /* Colors - Brand */
+    --color-primary: {{ settings.color_primary }};
+    --color-secondary: {{ settings.color_secondary }};
+    --color-accent: {{ settings.color_accent }};
+    
+    /* Colors - Backgrounds */
+    --color-background: {{ settings.color_background }};
+    --color-background-secondary: {{ settings.color_background_secondary }};
+    
+    /* Colors - Text */
+    --color-foreground: {{ settings.color_foreground }};
+    --color-text-secondary: {{ settings.color_text_secondary }};
+    
+    /* Colors - Sale */
+    --color-sale-badge: {{ settings.color_sale_badge }};
+    --color-sale-text: {{ settings.color_sale_text }};
+    
+    /* Buttons - Primary */
+    --button-primary-bg: {{ settings.button_primary_background }};
+    --button-primary-text: {{ settings.button_primary_text }};
+    --button-primary-style: {{ settings.button_primary_style }};
+    
+    /* Buttons - Secondary */
+    --button-secondary-bg: {{ settings.button_secondary_background }};
+    --button-secondary-text: {{ settings.button_secondary_text }};
+    
+    /* Buttons - Shared */
+    --button-border-radius: {{ settings.button_corner_radius }};
+    
+    /* Cart */
+    --cart-free-shipping-threshold: {{ settings.cart_free_shipping_threshold }};
+    
+    /* Inputs */
+    --input-border-radius: {{ settings.input_corner_radius }}px;
   }
 {% endstyle %}
